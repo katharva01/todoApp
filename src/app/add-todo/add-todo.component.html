@@ -1,0 +1,27 @@
+<div class="container card m-6 p-3">
+    <h5 class="mx-auto">Add a todo element</h5>
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label  for="inName" class="form-label">Name :</label>
+            <input [(ngModel)]="name" type="string" class="form-control" name="name" id="inName"  >
+           
+          </div>
+          <div class="mb-3">
+            <label for="inId" class="form-label">Id :</label>
+            <input [(ngModel)]="id" type="number" class="form-control" id="inId" name="id" >
+           
+          </div>
+          <div class="mb-3">
+            <label for="inDesc" class="form-label">Description : </label>
+            <input [(ngModel)]="desc" type="string" class="form-control" id="inDsc" name="desc" >
+           
+          </div>
+         
+         
+          <div class="mb-3 form-check" >
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Confirm</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
